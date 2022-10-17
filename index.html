@@ -5,13 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="./fontawesome-free-5.12.1-web/css/all.min.css"
-    />
     <link href="fontawesome-free-6.2.0-web/css/all.min.css" rel="stylesheet" />
+    <!-- css -->
     <link rel="stylesheet" href="./main.css" />
-    <title>Project</title>
+    <title>Elena Molano</title>
   </head>
   <body>
     <header id="home">
@@ -19,7 +16,7 @@
       <nav class="navbar">
         <div class="nav-center">
           <div class="nav-header">
-            <img src="./logo1.png" alt="logo" class="nav-logo" />
+            <img src="./images/logo1.png" alt="logo" class="nav-logo" />
             <button type="button" class="nav-toggle" id="nav-toggle">
               <i class="fas fa-bars"></i>
             </button>
@@ -33,12 +30,17 @@
             <!-- end og single link -->
             <!-- single link -->
             <li>
-              <a href="#services" class="nav-link scroll-link">services</a>
+              <a href="#skills" class="nav-link scroll-link">my skills</a>
             </li>
             <!-- end og single link -->
             <!-- single link -->
             <li>
-              <a href="#works" class="nav-link scroll-link">my works</a>
+              <a href="#projects" class="nav-link scroll-link"> Projects</a>
+            </li>
+            <!-- end og single link -->
+            <!-- single link -->
+            <li>
+              <a href="#artworks" class="nav-link scroll-link">art</a>
             </li>
             <!-- end og single link -->
             <!-- single link -->
@@ -56,7 +58,7 @@
     <section class="about-section">
       <!-- Hero image -->
       <div class="hero-img-container section-1">
-        <img src="./images/hero.jpg" alt="img" class="hero-img" />
+        <img src="./images/photo-of-me-purple.png" alt="img" class="hero-img" />
       </div>
       <!-- About -->
       <div class="about-container section-1">
@@ -73,16 +75,16 @@
           challenged in order to grow and further improve my developer skills.
         </p>
         <button class="btn btn-about-1">
-          <a href="#" class="hero-button-1">Let's chat</a>
+          <a href="#" class="hero-button-1">Projects</a>
         </button>
         <button class="btn btn-about-2">
-          <a href="#" class="hero-button-2">About</a>
+          <a href="#" class="hero-button-2">contact</a>
         </button>
       </div>
     </section>
 
     <!-- About me section ----Section 2 -->
-    <section class="section-2-introduction">
+    <section class="section-2-introduction" id="about">
       <div class="section-2-container">
         <article class="section-2-text section-2">
           <h2>A bit about me</h2>
@@ -101,17 +103,13 @@
           </p>
         </article>
         <article class="section-2-image section-2">
-          <img
-            src="./images/photo-of-me-purple.png"
-            alt="image-of-me"
-            class="me-image"
-          />
+          <img src="./images/hero.jpg" alt="image-of-me" class="me-image" />
         </article>
       </div>
     </section>
 
     <!-- Watercolor gallery ----Section 3 -->
-    <section class="section-3">
+    <section class="section-3" id="artworks">
       <h2>my art works</h2>
       <article class="section-3-photos">
         <!-- single item -->
@@ -174,10 +172,10 @@
       </button>
     </section>
 
-    <!-- Advantages ----Section 4 -->
-    <section class="advantages-section section-4">
+    <!-- Skills Section ----Section 4 -->
+    <section class="advantages-section section-4" id="skills">
+      <h1>What are my skills?</h1>
       <div class="section-4-container">
-        <h1>what i can do</h1>
         <!-- single item -->
         <article class="section-4-item">
           <div class="section-4-icon">
@@ -240,6 +238,65 @@
         </article>
       </div>
     </section>
+    <!-- Projects Section - Section 5 -->
+    <section class="skills-section section-5">
+      <h1>My projects</h1>
+      <div class="section-5-container">
+        <!-- single item -->
+        <article class="section-5-project project-1">
+          <div class="project-1-container project-text">
+            <h3>Project 1 - Personal web site</h3>
+            <p>
+              The very first attempt to apply the HTML & CSS knowledge to create
+              a real project with a practical value.
+              <br />
+              I started with my personal web-site.
+              <br />
+              As I was coding from the scratch, it took me a while to finilize
+              this project. The goal was also to use the maximum of my CSS
+              knowledge and use as many features I could. Without "overloading"
+              the final result of course.
+              <br />
+              Although a modern way of creating a responsive column layout, is
+              to use CSS Flexbox, I wanted to practice an "old-school" CSS
+              property of float as well. Important to mention that I am fully
+              familiar with a Flexbox Layout module.
+              <br />
+              Color combination is inspired by my two favotite colors.
+            </p>
+            <button class="btn btn-section-2">
+              <a href="#home" id="#home" class="section-2-button"
+                >visit website</a
+              >
+            </button>
+          </div>
+          <div class="project-1-container project-img">
+            <img
+              src="./images/project1.png"
+              alt="image-of-project"
+              class="project-1-image"
+            />
+            <a href="#" class="project-icon">
+              <i class="fa fa-search"></i>
+            </a>
+          </div>
+        </article>
+        <!-- end of single item -->
+        <!-- single item -->
+        <article class="section-5-project project-2">
+          <h3>Project 2 - Lorem ipsum dolor</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+            esse quam obcaecati architecto libero placeat sunt veniam quas. Ipsa
+            voluptatibus nihil rem, a, maiores dolorem, inventore veritatis eos
+            aspernatur deserunt iste aut ratione atque vero repudiandae
+            provident eius exercitationem qui.
+          </p>
+        </article>
+        <!-- end of single item -->
+      </div>
+    </section>
+
     <script src="./js/app.js"></script>
   </body>
 </html>
