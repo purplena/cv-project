@@ -127,6 +127,7 @@ h4 {
 
 .nav-logo {
   height: 30px;
+  cursor: pointer;
 }
 
 .nav-toggle {
@@ -246,6 +247,7 @@ h4 {
 
 .about-container p {
   padding-bottom: 2.5rem;
+  text-align: justify;
 }
 
 .btn-about-1 {
@@ -267,6 +269,7 @@ h4 {
 .btn-about-2 {
   border: 2px solid var(--clr-primary-5);
   background: var(--clr-white);
+  color: var(--clr-primary-5);
 }
 
 .btn-about-2:hover {
@@ -557,6 +560,7 @@ h4 {
   object-fit: contain;
   margin-top: 4rem;
   margin-bottom: 4rem;
+  transition: var(--transition);
 }
 
 .project-img a {
@@ -569,8 +573,26 @@ h4 {
 
 .project-icon {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: rgb(157, 23, 198);
+  opacity: 0;
+}
+
+.project-1-container:hover .project-1-image {
+  scale: 1.1;
+  opacity: 0.5;
+}
+
+/* .project-1-image:hover {
+  scale: 1.1;
+  opacity: 0.5;
+} */
+
+.project-1-container:hover .project-icon {
+  opacity: 1;
 }
 
 /* clearfix */
@@ -621,4 +643,149 @@ h4 {
 
 .section-5-project {
   margin-bottom: 3rem;
+}
+
+.section-5 {
+  margin-bottom: 3rem;
+}
+
+/* ====================== */
+/* Contact section - Section 6 */
+/* ====================== */
+
+.section-6 {
+  background: var(--clr-primary-10);
+  padding-bottom: 4.5rem;
+}
+
+.section-6-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.section-6-text {
+  padding-top: 3rem;
+}
+
+.section-6-text h1 {
+  margin-bottom: 1.5rem;
+}
+
+.section-6-text p {
+  margin-bottom: 3rem;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+.section-6-span {
+  text-decoration: underline;
+  color: rgb(157, 23, 198);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.section-6-form {
+  background: var(--clr-white);
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+}
+
+.section-6-form:hover {
+  box-shadow: var(--dark-shadow);
+}
+
+.section-6-form h3 {
+  padding-left: 2.5rem;
+  padding-top: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  display: inline-block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgb(157, 23, 198);
+}
+
+.form-control::placeholder {
+  font-family: var(--ff-primary);
+  color: var(--clr-grey-5);
+}
+
+.btn-section-6 {
+  margin-left: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.btn-section-6:hover {
+  color: var(--clr-white);
+  scale: 1.1;
+}
+
+.form-text-intro {
+  margin-bottom: 0.3rem;
+  margin-top: 1rem;
+  font-weight: bolder;
+}
+
+.form-control:focus {
+  background-color: rgb(247, 239, 247);
+  outline: none;
+  border: 1px solid var(--clr-primary-5);
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-6-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1152px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-6-flex {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(50% - 3rem);
+  }
+
+  .section-6-form {
+    margin-top: 3rem;
+  }
+}
+
+/* ====================== */
+/* Footer section - Section 7 */
+/* ====================== */
+
+.footer-container {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+.social-icons {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  margin-left: 1rem;
+  color: var(--clr-primary-5);
+}
+
+.footer-text {
+  text-align: center;
+  font-size: larger;
 }
