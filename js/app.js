@@ -16,10 +16,14 @@ if (date) {
 // ********** nav toggle ************
 // select button and links
 const navBtn = document.getElementById("nav-toggle");
+const navBtnClose = document.getElementById("nav-toggle-close");
 const links = document.getElementById("nav-links");
+
 // add event listener
 navBtn.addEventListener("click", () => {
   links.classList.toggle("show-links");
+  navBtn.classList.toggle("hidden");
+  navBtnClose.classList.toggle("visible");
 });
 
 // ********** smooth scroll ************

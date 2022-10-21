@@ -153,17 +153,20 @@ h4 {
   position: absolute;
   right: 17px;
   top: 19px;
-  opacity: 0;
+  /*opacity: 0;*/
+  display: none;
   transition: var(--transition);
 }
 
-.nav-toggle:hover {
+.nav-toggle.hidden {
   /* scale: 1.5; */
-  opacity: 0;
+  /*opacity: 0;*/
+  display: none;
 }
 
-.nav-toggle-close:hover{
-  opacity: 1;
+.nav-toggle-close.visible{
+  /*opacity: 1;*/
+  display: block;
 }
 
 
@@ -487,7 +490,6 @@ h4 {
   .section-2-container{
     padding-top: 3rem;
   }
-  '
 }
 /* ====================== */
 /* Watercolor section - Section 3 */
@@ -599,7 +601,7 @@ h4 {
 
 .section-4-item:hover {
   box-shadow: var(--dark-shadow);
-  
+
 }
 
 .section-4-item:hover::before{
