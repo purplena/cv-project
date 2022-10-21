@@ -20,6 +20,12 @@ const navBtnClose = document.getElementById("nav-toggle-close");
 const links = document.getElementById("nav-links");
 
 // add event listener
+navBtnClose.addEventListener("click", () => {
+  links.classList.remove("show-links");
+  navBtn.classList.remove("hidden");
+  navBtnClose.classList.remove("visible");
+});
+
 navBtn.addEventListener("click", () => {
   links.classList.toggle("show-links");
   navBtn.classList.toggle("hidden");

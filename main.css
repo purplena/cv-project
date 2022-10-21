@@ -130,7 +130,7 @@ h4 {
   cursor: pointer;
 }
 
-.nav-header{
+.nav-header {
   position: relative;
 }
 
@@ -143,8 +143,7 @@ h4 {
   transition: var(--transition);
 }
 
-
-.nav-toggle-close{
+.nav-toggle-close {
   background: transparent;
   border: transparent;
   font-size: 1.5rem;
@@ -164,11 +163,10 @@ h4 {
   display: none;
 }
 
-.nav-toggle-close.visible{
+.nav-toggle-close.visible {
   /*opacity: 1;*/
   display: block;
 }
-
 
 .nav-link {
   display: block;
@@ -197,8 +195,6 @@ h4 {
 .show-links {
   height: 280px;
 }
-
-
 
 @media screen and (min-width: 992px) {
   .navbar {
@@ -487,7 +483,7 @@ h4 {
     padding-top: 0;
   }
 
-  .section-2-container{
+  .section-2-container {
     padding-top: 3rem;
   }
 }
@@ -601,15 +597,14 @@ h4 {
 
 .section-4-item:hover {
   box-shadow: var(--dark-shadow);
-
 }
 
-.section-4-item:hover::before{
+.section-4-item:hover::before {
   top: 0;
   left: 0;
 }
 
-.section-3-img-container{
+.section-3-img-container {
   position: relative;
 }
 
@@ -626,7 +621,7 @@ h4 {
   opacity: 0;
 }
 
-.section-3-img-container:hover::before{
+.section-3-img-container:hover::before {
   opacity: 1;
   top: 10px;
   left: 10px;
@@ -860,7 +855,7 @@ h4 {
   display: inline-block;
   width: 100%;
   padding: 0.75rem 1rem;
-  border: 1px solid var(--clr-primary-5)
+  border: 1px solid var(--clr-primary-5);
 }
 
 .form-control::placeholder {
