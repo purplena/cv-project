@@ -139,10 +139,35 @@ h4 {
   border: transparent;
   font-size: 1.5rem;
   color: var(--clr-primary-5);
-  cursor: pointer;
   transition: var(--transition);
+
+  cursor: pointer;
+  position: relative;
+
+  width: 21px;
+  height: 24px;
 }
 
+.nav-toggle i {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.nav-toggle i.menu-open {
+  opacity: 0;
+  left: 1px;
+}
+
+.nav-toggle.open i.menu-open {
+  opacity: 1;
+}
+
+.nav-toggle.open i.menu-closed {
+  opacity: 0;
+}
+
+/*
 .nav-toggle-close {
   background: transparent;
   border: transparent;
@@ -152,21 +177,22 @@ h4 {
   position: absolute;
   right: 17px;
   top: 19px;
-  /*opacity: 0;*/
+  opacity: 0;
   display: none;
   transition: var(--transition);
 }
 
 .nav-toggle.hidden {
-  /* scale: 1.5; */
-  /*opacity: 0;*/
+  scale: 1.5; 
+  opacity: 0;
   display: none;
 }
 
 .nav-toggle-close.visible {
-  /*opacity: 1;*/
+  opacity: 1;
   display: block;
 }
+*/
 
 .nav-link {
   display: block;
