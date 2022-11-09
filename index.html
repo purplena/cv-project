@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- font-awesome -->
     <link href="fontawesome-free-6.2.0-web/css/all.min.css" rel="stylesheet" />
-    <!-- css -->
-    <link rel="stylesheet" href="./css/main.scss" />
+    <!-- scss -->
+    <link rel="stylesheet" href="./scss/main.scss" />
     <title>Elena Molano</title>
   </head>
   <body>
@@ -61,6 +61,7 @@
       <!-- End of Navbar -->
     </header>
 
+    <!-- Hero section -->
     <section class="about-section">
       <!-- Hero image -->
       <div class="hero-img-container section-1">
@@ -84,16 +85,12 @@
           I am looking forward to working on your project and I am eager to be
           challenged in order to grow and further improve my developer skills.
         </p>
-        <a href="#projects" class="hero-button-1"
-          ><button class="btn btn-about-1">Projects</button></a
-        >
-        <a href="#contact" class="hero-button-2"
-          ><button class="btn btn-about-2">contact</button></a
-        >
+        <a href="#projects" class="btn btn-about-1">Projects</a>
+        <a href="#contact" class="btn btn-about-2">Contact</a>
       </div>
     </section>
 
-    <!-- About me section ----Section 2 -->
+    <!-- About section ----Section 2 -->
     <section class="section-2-introduction" id="about">
       <div class="section-2-container">
         <article class="section-2-text section-2">
@@ -111,40 +108,32 @@
           </p>
         </article>
         <article class="section-2-education section-2">
-          <div class="education-card">
-            <h4>Education</h4>
-            <div class="education-icon-container">
-              <i class="fa-solid fa-graduation-cap education-icon"></i>
-            </div>
-            <p>
-              <span class="education-span"
-                >Masters of International Relations</span
-              >
-              <br />
-              National Research Nuclear University MEPhI <br />
-              Year of graduation: 2015
-            </p>
-          </div>
+          <h4>Education</h4>
+          <i class="fa-solid fa-graduation-cap education-icon"></i>
+          <p>
+            <span class="education-span"
+              >Masters of International Relations</span
+            >
+            <br />
+            National Research Nuclear University MEPhI <br />
+            Year of graduation: 2015
+          </p>
         </article>
         <article class="section-2-work section-2">
-          <div class="work-card">
-            <h4>Work experience</h4>
-            <div class="work-icon-container">
-              <i class="fa-solid fa-briefcase work-icon"></i>
-            </div>
-            <p>
-              5+ years experience in FMCG business <br />
-              I had a chance to work for an American multinational corporation
-              <span class="span-work-1">PepsiCo Inc.</span> <br /><span
-                class="span-work-2"
-                >What did I get?</span
-              >
-              <br />A huge professional boost, deep knowledge of FMCG business,
-              excellent organisational and comunication skills.
-              <br />
-              From 2013 to 2019
-            </p>
-          </div>
+          <h4>Work experience</h4>
+          <i class="fa-solid fa-briefcase work-icon"></i>
+          <p>
+            5+ years experience in FMCG business <br />
+            I had a chance to work for an American multinational corporation
+            <span class="span-work-1">PepsiCo Inc.</span> <br /><span
+              class="span-work-2"
+              >What did I get?</span
+            >
+            <br />A huge professional boost, deep knowledge of FMCG business,
+            excellent organisational and comunication skills.
+            <br />
+            From 2013 to 2019
+          </p>
         </article>
       </div>
     </section>
@@ -152,177 +141,151 @@
     <!-- Watercolor gallery ----Section 3 -->
     <section class="section-3" id="artworks">
       <h2>my art works</h2>
-      <article class="section-3-photos">
+      <div class="section-3-container">
         <!-- single item -->
-        <div class="section-3-img-container">
+        <article class="article-watercolor">
           <img
-            src="./images/flower1.png"
+            src="./images/img1.png"
             class="gallery-img"
             alt="image of flower_watercolor"
           />
-        </div>
+        </article>
         <!-- end of single item -->
         <!-- single item -->
-        <div class="section-3-img-container">
+        <article class="article-watercolor">
           <img
-            src="./images/flower4.png"
+            src="./images/img2.png"
             class="gallery-img"
             alt="image of flower_watercolor"
           />
-        </div>
+        </article>
         <!-- end of single item -->
         <!-- single item -->
-        <div class="section-3-img-container">
+        <article class="article-watercolor">
           <img
-            src="./images/flower5.png"
+            src="./images/img3.png"
             class="gallery-img"
             alt="image of flower_watercolor"
           />
-        </div>
+        </article>
         <!-- end of single item -->
         <!-- single item -->
-        <div class="section-3-img-container">
+        <article class="article-watercolor">
           <img
-            src="./images/flower9.png"
+            src="./images/img4.png"
             class="gallery-img"
             alt="image of flower_watercolor"
           />
-        </div>
+        </article>
         <!-- end of single item -->
         <!-- single item -->
-        <div class="section-3-img-container">
+        <article class="article-watercolor">
           <img
-            src="./images/flower10.png"
+            src="./images/img5.png"
             class="gallery-img"
             alt="image of flower_watercolor"
           />
-        </div>
+        </article>
         <!-- end of single item -->
         <!-- single item -->
-        <div class="section-3-img-container">
+        <article class="article-watercolor">
           <img
-            src="./images/flower12.png"
+            src="./images/img6.png"
             class="gallery-img"
             alt="image of flower_watercolor"
           />
-        </div>
+        </article>
         <!-- end of single item -->
-      </article>
-      <button class="btn btn-section-2">
-        <a href="#" class="section-2-button">see more</a>
-      </button>
+      </div>
+      <a href="#!" class="btn btn-section-3">see more</a>
     </section>
 
     <!-- Skills Section ----Section 4 -->
-    <section class="advantages-section section-4" id="skills">
+    <section class="section-4" id="skills">
       <h1>What are my skills?</h1>
       <div class="section-4-container">
         <!-- single item -->
         <article class="section-4-item">
-          <div class="section-4-icon">
-            <i class="fa-regular fa-lightbulb"></i>
-          </div>
-          <div class="section-4-text">
-            <h3>versatile experience</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-              modi. Vitae quaerat, repudiandae nulla non aliquam cum qui nisi
-              consequatur? Reprehenderit culpa modi commodi nostrum
-              perspiciatis, esse tenetur dolorum laboriosam.
-            </p>
-          </div>
+          <i class="fa-regular fa-lightbulb section-4-icon"></i>
+          <h3>versatile experience</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+            modi. Vitae quaerat, repudiandae nulla non aliquam cum qui nisi
+            consequatur? Reprehenderit culpa modi commodi nostrum perspiciatis,
+            esse tenetur dolorum laboriosam.
+          </p>
         </article>
         <!-- single item -->
         <article class="section-4-item">
-          <div class="section-4-icon">
-            <i class="fa-solid fa-code"></i>
-          </div>
-          <div class="section-4-text">
-            <h3>Web skills</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-              modi. Vitae quaerat, repudiandae nulla non aliquam cum qui nisi
-              consequatur? Reprehenderit culpa modi commodi nostrum
-              perspiciatis, esse tenetur dolorum laboriosam.
-            </p>
-          </div>
+          <i class="fa-solid fa-code section-4-icon"></i>
+          <h3>Web skills</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+            modi. Vitae quaerat, repudiandae nulla non aliquam cum qui nisi
+            consequatur? Reprehenderit culpa modi commodi nostrum perspiciatis,
+            esse tenetur dolorum laboriosam.
+          </p>
         </article>
         <!-- single item -->
         <article class="section-4-item">
-          <div class="section-4-icon">
-            <i class="fa-regular fa-comments"></i>
-          </div>
-          <div class="section-4-text">
-            <h3>multilingual environment</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-              modi. Vitae quaerat, repudiandae nulla non aliquam cum qui nisi
-              consequatur? Reprehenderit culpa modi commodi nostrum
-              perspiciatis, esse tenetur dolorum laboriosam.
-            </p>
-          </div>
+          <i class="fa-regular fa-comments section-4-icon"></i>
+          <h3>multilingual environment</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+            modi. Vitae quaerat, repudiandae nulla non aliquam cum qui nisi
+            consequatur? Reprehenderit culpa modi commodi nostrum perspiciatis,
+            esse tenetur dolorum laboriosam.
+          </p>
         </article>
         <!-- single item -->
         <article class="section-4-item">
-          <div class="section-4-icon">
-            <i class="fa-regular fa-paper-plane"></i>
-          </div>
-          <div class="section-4-text">
-            <h3>challenge seeker</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-              modi. Vitae quaerat, repudiandae nulla non aliquam cum qui nisi
-              consequatur? Reprehenderit culpa modi commodi nostrum
-              perspiciatis, esse tenetur dolorum laboriosam.
-            </p>
-          </div>
+          <i class="fa-regular fa-paper-plane section-4-icon"></i>
+          <h3>challenge seeker</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+            modi. Vitae quaerat, repudiandae nulla non aliquam cum qui nisi
+            consequatur? Reprehenderit culpa modi commodi nostrum perspiciatis,
+            esse tenetur dolorum laboriosam.
+          </p>
         </article>
       </div>
     </section>
+
     <!-- Projects Section - Section 5 -->
-    <section class="project-section section-5" id="projects">
+    <section class="section-5" id="projects">
       <h1>My projects</h1>
-      <div class="section-5-container">
-        <!-- single item -->
-        <article class="section-5-project project-1">
-          <div class="project-1-container project-text">
-            <h3>Project 1 - Personal web site</h3>
-            <p>
-              The very first attempt to apply the HTML & CSS knowledge to create
-              a real project with a practical value.
-              <br />
-              I started with my personal web-site.
-              <br />
-              As I was coding from the scratch, it took me a while to finilize
-              this project. The goal was also to use the maximum of my CSS
-              knowledge and use as many features I could. Without "overloading"
-              the final result of course.
-              <br />
-              Although a modern way of creating a responsive column layout, is
-              to use CSS Flexbox, I wanted to practice an "old-school" CSS
-              property of float as well. Important to mention that I am fully
-              familiar with a Flexbox Layout module.
-              <br />
-              Color combination is inspired by my two favotite colors.
-            </p>
-            <a href="#home" id="#home" class="section-2-button"
-              ><button class="btn btn-section-2">visit website</button></a
-            >
-          </div>
-          <div class="project-1-container project-img">
-            <img
-              src="./images/project1.png"
-              alt="image-of-project"
-              class="project-1-image"
-            />
-            <a href="#home" class="project-icon">
-              <i class="fa fa-search"></i>
-            </a>
-          </div>
-        </article>
-        <!-- end of single item -->
-      </div>
+      <!-- single item -->
+      <article class="project-1-container">
+        <div class="project-text">
+          <h3>Project 1 - Personal web site</h3>
+          <p>
+            The very first attempt to apply the HTML & CSS knowledge to create a
+            real project with a practical value.
+            <br />
+            I started with my personal web-site.
+            <br />
+            As I was coding from the scratch, it took me a while to finilize
+            this project. The goal was also to use the maximum of my CSS
+            knowledge and use as many features I could. Without "overloading"
+            the final result of course.
+            <br />
+            Although a modern way of creating a responsive column layout, is to
+            use CSS Flexbox, I wanted to practice an "old-school" CSS property
+            of float as well. Important to mention that I am fully familiar with
+            a Flexbox Layout module.
+            <br />
+            Color combination is inspired by my two favotite colors.
+          </p>
+          <a href="#home" id="#home" class="btn btn-section-5">visit me</a>
+        </div>
+        <a href="#home" class="project-link">
+          <img src="./images/project1.png" alt="image-of-project" />
+          <i class="fa fa-search project-icon"></i>
+        </a>
+      </article>
+      <!-- end of single item -->
     </section>
+
     <!-- Contact Section - Section 6 -->
     <section class="section-6" id="contact">
       <div class="section-6-container">
