@@ -22,26 +22,10 @@
     position: relative;
     transition: $transition;
     box-shadow: $light-shadow;
+    border: 2px solid rgb(157, 23, 198);
 
     &:hover {
       box-shadow: $dark-shadow;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border: 2px solid rgb(157, 23, 198);
-      box-sizing: border-box;
-      top: 10px;
-      left: 10px;
-      transition: $transition;
-    }
-
-    &:hover::before {
-      top: 0;
-      left: 0;
     }
 
     .section-4-icon {

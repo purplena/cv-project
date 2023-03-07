@@ -16,6 +16,8 @@
     background: rgb(242, 242, 242);
     text-align: center;
     padding: 3rem 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     padding-bottom: 1rem;
 
     .project-text {
@@ -74,18 +76,33 @@
       }
     }
   }
+
+  .projects-image-container {
+  }
 }
 
-@media screen and (min-width: 650px) {
-  .section-5 .project-1-container {
+@media screen and (min-width: 500px) {
+  .projects-image-container {
     display: flex;
-    padding: 4rem;
-    padding-bottom: 3rem;
-    gap: 3rem;
-    justify-content: space-between;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .section-5 .project-1-container {
+    // padding: 4rem;
+    // padding-bottom: 3rem;
+    // gap: 3rem;
   }
 
   .project-text h3 {
     padding-left: 0;
+  }
+
+  .project-1-flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
   }
 }

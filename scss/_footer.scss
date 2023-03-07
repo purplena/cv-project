@@ -7,18 +7,20 @@
   padding-bottom: 3rem;
 }
 
-.social-icons {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.social-icon {
-  margin-left: 1rem;
-  color: $clr-primary-5;
-}
-
 .footer-text {
   text-align: center;
-  font-size: larger;
+  font-weight: 700;
+  color: $clr-primary-2;
+}
+
+.social-icons-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+  img {
+    display: block;
+    width: 32px;
+  }
 }
